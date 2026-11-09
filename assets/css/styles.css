@@ -52,7 +52,7 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; }
 h1, h2, h3 { font-family: var(--display); font-weight: 400; margin: 0; text-wrap: balance; }
 p { margin: 0; }
@@ -175,7 +175,7 @@ p { margin: 0; }
 
 /* ---------- contact ---------- */
 .contact { position: relative; overflow: hidden; isolation: isolate; background: var(--midnight); color: var(--ivory); padding: clamp(96px, 12vw, 170px) 0; text-align: center; }
-.contact__emboss { position: absolute; z-index: -1; width: min(720px, 90vw); left: -6%; bottom: -34%; pointer-events: none; }
+.contact__emboss { position: absolute; z-index: -1; width: min(720px, 90vw); max-width: none; height: auto; left: -9%; bottom: -34%; pointer-events: none; }
 .contact__emboss--r { left: auto; right: -10%; top: -40%; bottom: auto; width: min(520px, 70vw); transform: scaleX(-1); opacity: .9; }
 .contact .wrap { display: flex; flex-direction: column; align-items: center; gap: 26px; }
 .contact .eyebrow { color: var(--champagne); }
@@ -205,6 +205,7 @@ p { margin: 0; }
   .hero__content { padding-top: calc(env(safe-area-inset-top, 0px) + 128px); }
   .nav { gap: 4px 22px; }
   .nav a:not(.nav-cta) { display: none; }
+  .contact__emboss { width: 118vw; left: -38%; bottom: -10%; }
 }
 
 @media (prefers-reduced-motion: reduce) {

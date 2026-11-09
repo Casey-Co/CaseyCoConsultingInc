@@ -38,7 +38,7 @@ Check GitHub's current documentation before changing DNS, in case the addresses 
 
 ## Editing
 
-- Text lives in `index.html`. The contact email and phone appear in the Contact section and in the structured data in the `<head>`.
+- Text lives in `index.html`. The **Send an email** button currently goes to `casey.co.consulting.inc@gmail.com`; switch it to the caseyco.ca address once that inbox is active. The phone number is in the Contact section and in the structured data in the `<head>`.
 - Colours and type are defined at the top of `assets/css/styles.css`.
 
 ## Copyright
