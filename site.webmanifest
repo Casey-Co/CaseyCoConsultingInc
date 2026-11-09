@@ -1,0 +1,11 @@
+{
+  "name": "Casey & Co. Consulting",
+  "short_name": "Casey & Co.",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#111A2D",
+  "background_color": "#111A2D",
+  "display": "browser"
+}
