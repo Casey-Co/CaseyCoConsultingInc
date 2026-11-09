@@ -158,19 +158,16 @@ p { margin: 0; }
 
 /* ---------- services ---------- */
 .services { background: var(--paper); color: var(--ink); padding: clamp(80px, 10vw, 140px) 0; }
-.services__head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: clamp(40px, 6vw, 72px); }
+.services__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: clamp(32px, 6vw, 96px); align-items: start; }
 .services__head .eyebrow { color: var(--gold-text); margin-bottom: 22px; }
 .services__head h2 { font-size: clamp(2.2rem, 4.4vw, 3.4rem); line-height: 1.06; }
-.services__head p { color: var(--muted); max-width: 40ch; }
 .service-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line-light); }
 .service {
-  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr) 40px; gap: 24px 48px; align-items: center;
-  padding: 34px 0; border-bottom: 1px solid var(--line-light);
-  transition: background-color .3s ease;
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  padding: 22px 0; border-bottom: 1px solid var(--line-light);
+  font-family: var(--display); font-size: clamp(1.5rem, 2.4vw, 2rem); line-height: 1.15;
 }
-.service h3 { font-size: clamp(1.6rem, 2.6vw, 2.15rem); line-height: 1.1; }
-.service p { color: #4A4640; max-width: 52ch; }
-.service__mark { width: 30px; justify-self: end; opacity: 0; transform: translateX(-6px); transition: opacity .3s ease, transform .3s ease; }
+.service__mark { width: 26px; flex: none; opacity: 0; transform: translateX(-6px); transition: opacity .3s ease, transform .3s ease; }
 .service:hover .service__mark { opacity: 1; transform: none; }
 
 /* ---------- contact ---------- */
@@ -193,7 +190,8 @@ p { margin: 0; }
 /* ---------- responsive ---------- */
 @media (max-width: 880px) {
   .statement .wrap { grid-template-columns: minmax(0, 1fr); align-items: start; }
-  .service { grid-template-columns: minmax(0, 1fr); gap: 10px; padding: 28px 0; }
+  .services__grid { grid-template-columns: minmax(0, 1fr); }
+  .service { padding: 18px 0; }
   .service__mark { display: none; }
 }
 @media (max-width: 720px) {
